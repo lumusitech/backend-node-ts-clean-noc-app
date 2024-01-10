@@ -1,1 +1,7 @@
-console.log('Hello World')
+;(async () => {
+  await main()
+})()
+
+export async function main() {
+  console.log('Hello World')
+}
