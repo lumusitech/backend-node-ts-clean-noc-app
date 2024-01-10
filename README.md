@@ -91,6 +91,8 @@ Official documentation [about Jest](https://jestjs.io/docs/getting-started)
 
 Production:
 
+- [Cron](https://www.npmjs.com/package/cron): cron is a robust tool for running jobs (functions or commands) on schedules defined using the cron syntax. Perfect for tasks like data backups, notifications, and many more!
+
 Development:
 
 - [git linter](https://www.npmjs.com/package/git-commit-msg-linter): A lightweight, independent, 0 configurations and joyful git commit message linter. 👀 Watching your every git commit message INSTANTLY 🚀.
