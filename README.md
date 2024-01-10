@@ -1,4 +1,4 @@
-# NOC App (Service Monitoring)
+# NOC App (Network Operations Center)
 
 NOTE: After clone, run:
 
