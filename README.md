@@ -9,7 +9,7 @@ pnpm dev
 
 ## Node with TypeScript - TS-Node-dev (better than nodemon when use typescript)
 
-This app was initialized with this steps:
+### This app was initialized with this steps
 
 1. Install TypeScript and other dependencies
 
@@ -29,6 +29,40 @@ This app was initialized with this steps:
    "dev": "tsnd --respawn --clear src/app.ts",
    "build": "rimraf ./dist && tsc",
    "start": "npm run build && node dist/app.js"
+   ```
+
+### Jest with TypeScript config
+
+Official documentation [about Jest](https://jestjs.io/docs/getting-started)
+
+1. Development installs (super test is great to test Express)
+
+   ```sh
+   pnpm i -D jest @types/jest ts-jest supertest
+   ```
+
+2. Crear archivo de configuración de Jest
+
+   ```sh
+   pnpm exec jest --init
+   ```
+
+3. config **jest.config.js** file
+
+   ```ts
+   preset: 'ts-jest',
+   testEnvironment: "jest-environment-node",
+
+   // Opcional - The paths to modules that run some code to configure or set up the testing environment before each test
+   // setupFiles: ['dotenv/config'],
+   ```
+
+4. Add the following scripts to the **package.json** file
+
+   ```sh
+   "test": "jest",
+   "test:watch": "jest --watch",
+   "test:coverage": "jest --coverage",
    ```
 
 ## This app use clean architecture. Next, you can see some considerations about this
