@@ -1,8 +1,8 @@
 {
-  "name": "04-backend-node-ts-clean-noc-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "backend-node-ts-clean-noc-app",
+  "version": "0.0.1",
+  "description": "This is a Node project to build a NOC app (Network Operations Center). This uses clean architecture and repository pattern.",
+  "main": "app.js",
   "scripts": {
     "dev": "tsnd --respawn --clear src/app.ts",
     "build": "rimraf ./dist && tsc",
@@ -11,8 +11,15 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "typescript",
+    "jest",
+    "supertest",
+    "clean architecture",
+    "email sender"
+  ],
+  "author": "lumusitech",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.11",
