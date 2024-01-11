@@ -1,7 +1,9 @@
+import { Server } from './presentation/server'
+
 ;(async () => {
-  await main()
+  main()
 })()
 
-export async function main() {
-  console.log('Hello World')
+function main() {
+  Server.start()
 }
