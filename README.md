@@ -1,11 +1,22 @@
 # NOC App (Network Operations Center)
 
-NOTE: After clone, run:
+NOTE: After clone:
 
-```sh
-pnpm i
-pnpm dev
-```
+1. Create and config .env file with:
+
+   ```text
+   PORT=3000
+   MAILER_EMAIL=
+   MAILER_SECRET_KEY=
+   PROD=false
+   ```
+
+2. Next, run:
+
+   ```sh
+   pnpm i
+   pnpm dev
+   ```
 
 ## Node with TypeScript - TS-Node-dev (better than nodemon when use typescript)
 
@@ -110,3 +121,7 @@ Development:
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev): It restarts target node process when any of required files changes (as standard node-dev) but shares Typescript compilation process between restarts. This significantly increases speed of restarting comparing to node-dev -r ts-node/register ..., nodemon -x ts-node ... variations because there is no need to instantiate ts-node compilation each time.
 
 - [rimraf](https://www.npmjs.com/package/rimraf): The UNIX command rm -rf for node.
+
+```
+
+```
