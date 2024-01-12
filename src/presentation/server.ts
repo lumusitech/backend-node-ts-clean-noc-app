@@ -3,10 +3,15 @@ import { CronService } from '../presentation/cron/cron-service'
 
 export class Server {
   public static start() {
-    console.log('🚀 Server started...')
+    console.log('🚀 Server started...\n')
 
-    CronService.createJob('*/10 * * * * *', () => {
-      new CheckService().execute('https://www.google.com')
+    CronService.createJob('*/3 * * * * *', () => {
+      const url = 'https://www.google.com'
+
+      new CheckService(
+        () => console.log(`🟢 Service at ${url} is ok`),
+        error => console.log(error),
+      ).execute(url)
     })
   }
 }
