@@ -7,7 +7,7 @@ NOTE: After clone:
    ```text
    PORT=3000
    MAILER_EMAIL=
-   MAILER_SECRET_KEY=
+   MAILER_SECRET_KEY={{Create it with your google account searching 'contraseñas de aplicaciones'}}
    PROD=false
    ```
 
