@@ -108,6 +108,8 @@ Production:
 
 - [Env-Var](https://www.npmjs.com/package/env-var): Verification, sanitization, and type coercion for environment variables in Node.js and web applications. Supports TypeScript!
 
+- [Node Mailer](https://www.npmjs.com/package/nodemailer): Send emails from Node.js – easy as cake! 🍰 📧
+
 Development:
 
 - [git linter](https://www.npmjs.com/package/git-commit-msg-linter): A lightweight, independent, 0 configurations and joyful git commit message linter. 👀 Watching your every git commit message INSTANTLY 🚀.
