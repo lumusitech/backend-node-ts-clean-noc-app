@@ -12,6 +12,8 @@ NOTE: After clone:
    PROD=false
    ```
 
+   _[Get gmail secret key here](https://myaccount.google.com/u/0/apppasswords)_
+
 2. Next, run:
 
    ```sh
