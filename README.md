@@ -119,6 +119,8 @@ Production:
 
 - [Node Mailer](https://www.npmjs.com/package/nodemailer): Send emails from Node.js – easy as cake! 🍰 📧
 
+- [Mongoose](https://www.npmjs.com/package/mongoose): Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports Node.js and Deno (alpha).
+
 Development:
 
 - [git linter](https://www.npmjs.com/package/git-commit-msg-linter): A lightweight, independent, 0 configurations and joyful git commit message linter. 👀 Watching your every git commit message INSTANTLY 🚀.
