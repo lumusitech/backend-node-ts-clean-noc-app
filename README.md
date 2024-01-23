@@ -8,8 +8,13 @@ NOTE: After clone:
    PORT=3000
    MAILER_SERVICE=
    MAILER_EMAIL=
-   MAILER_SECRET_KEY={{Create it with your google account searching 'contraseñas de aplicaciones'}}
+   MAILER_SECRET_KEY=
    PROD=false
+
+   MONGO_URL=
+   MONGO_DB_NAME=
+   MONGO_USER=
+   MONGO_PASS=
    ```
 
    _[Get gmail secret key here](https://myaccount.google.com/u/0/apppasswords)_
@@ -18,6 +23,7 @@ NOTE: After clone:
 
    ```sh
    pnpm i
+   docker compose up -d
    pnpm dev
    ```
 
