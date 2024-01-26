@@ -20,6 +20,9 @@ dependencies:
   nodemailer:
     specifier: ^6.9.8
     version: 6.9.8
+  pnpm:
+    specifier: ^8.14.3
+    version: 8.14.3
 
 devDependencies:
   '@types/jest':
@@ -2530,6 +2533,12 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
+
+  /pnpm@8.14.3:
+    resolution: {integrity: sha512-w+2A61g74+K37zHrlri5z6oFA+XUTscXUUEgtRh7L5M3NukDjFGlojrVgnkLpB1Kt4RhjIn6fiNl9mZWhdYS7g==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: false
 
   /pretty-format@29.7.0:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}
