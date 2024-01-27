@@ -15,6 +15,10 @@ NOTE: After clone:
    MONGO_DB_NAME=
    MONGO_USER=
    MONGO_PASS=
+
+    POSTGRES_DB=
+    POSTGRES_USER=
+    POSTGRES_PASSWORD=
    ```
 
    _[Get gmail secret key here](https://myaccount.google.com/u/0/apppasswords)_
