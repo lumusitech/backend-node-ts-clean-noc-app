@@ -90,6 +90,13 @@ Official documentation [about Jest](https://jestjs.io/docs/getting-started)
    "test:coverage": "jest --coverage",
    ```
 
+5. Optional: In case of permission errors, run:
+
+   ```sh
+   cd ..
+   sudo chmod -R 755 project-name
+   ```
+
 ## This app use clean architecture. Next, you can see some considerations about this
 
 ![Clean Arch Circle Dependencies Direction](public/assets/images/readme/clean-arch-circle-depdendencies.png)
