@@ -134,3 +134,5 @@ dist
 # docker-databases
 mongo
 postgres
+mongo-test
+postgres-test
