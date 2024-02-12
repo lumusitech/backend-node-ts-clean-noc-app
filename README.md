@@ -66,7 +66,7 @@ Official documentation [about Jest](https://jestjs.io/docs/getting-started)
    pnpm i -D jest @types/jest ts-jest supertest
    ```
 
-2. Crear archivo de configuración de Jest
+2. Create jest config file
 
    ```sh
    pnpm exec jest --init
