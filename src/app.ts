@@ -1,7 +1,7 @@
-import { envs } from './config/plugins/envs.plugin'
-import { MongoDatabase } from './data/mongo-db'
-import { Server } from './presentation/server'
-;(async () => {
+import { envs } from './config/plugins/envs.plugin';
+import { MongoDatabase } from './data/mongo-db';
+import { Server } from './presentation/server';
+(async () => {
   main()
 })()
 

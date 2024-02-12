@@ -1,9 +1,12 @@
-import { FileSystemDatasource } from '../infrastructure/datasources/flie-system.datasource'
+import { CheckService } from '../domain/use-cases/checks/check-service'
+import { PostgresLogDatasource } from '../infrastructure/datasources/postgres-log.datasource'
 import { LogRepositoryImpl } from '../infrastructure/repositories/log.repository.impl'
+import { CronService } from './cron/cron-service'
 
 // const emailService = new EmailService()
 // const logRepository = new LogRepositoryImpl(new MongoLogDatasource())
-const logRepository = new LogRepositoryImpl(new FileSystemDatasource())
+// const logRepository = new LogRepositoryImpl(new FileSystemDatasource())
+const logRepository = new LogRepositoryImpl(new PostgresLogDatasource())
 
 export class Server {
   public static async start() {
@@ -15,19 +18,15 @@ export class Server {
     //   'figueroacarlosluciano@gmail.com',
     // ])
 
-    // query for read logs from Mongo as test - can delete it
-    // const logs = await logRepository.getLogs(LogSeveretyLevel.high)
-    // console.log('🟢 Logs: ', logs)
-
     // Cron Service
-    // CronService.createJob('*/3 * * * * *', () => {
-    //   const url = 'https://www.google.com'
+    CronService.createJob('*/3 * * * * *', () => {
+      const url = 'https://www.google.com'
 
-    //   new CheckService(
-    //     logRepository,
-    //     () => console.log(`🟢 Service at ${url} is ok`),
-    //     error => console.log(`🔴 ${error}`),
-    //   ).execute(url)
-    // })
+      new CheckService(
+        logRepository,
+        () => console.log(`🟢 Service at ${url} is ok`),
+        error => console.log(`🔴 ${error}`),
+      ).execute(url)
+    })
   }
 }
