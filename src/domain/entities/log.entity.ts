@@ -32,9 +32,9 @@ export class LogEntity {
     //? Validation
     json = json === '' ? '{}' : json
 
-    const { message, level, createdAt } = JSON.parse(json)
+    const { message, level, origin, createdAt } = JSON.parse(json)
 
-    const log = new LogEntity({ level, message, origin, createdAt })
+    const log = new LogEntity({ level, message, origin, createdAt: new Date(createdAt) })
 
     return log
   }
@@ -44,6 +44,6 @@ export class LogEntity {
 
     // TODO: Add validations for each property
 
-    return new LogEntity({ message, level, origin, createdAt })
+    return new LogEntity({ message, level, origin, createdAt: new Date(createdAt) })
   }
 }
